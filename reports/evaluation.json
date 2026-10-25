@@ -1,0 +1,196 @@
+{
+  "data_type": "seeded synthetic data",
+  "seed": 43121,
+  "weeks": 130,
+  "evaluation": {
+    "training_weeks": 104,
+    "holdout_weeks": 26,
+    "model": {
+      "mae": 5.33222608004074,
+      "rmse": 6.484459722695754
+    },
+    "seasonal_naive": {
+      "mae": 21.602307692307686,
+      "rmse": 28.266166041617804
+    },
+    "predictions": [
+      449.7383624781052,
+      458.05916603671903,
+      472.0218120206661,
+      463.35005979590153,
+      471.87255082818837,
+      466.78986609506603,
+      472.77423022832227,
+      462.67184013120703,
+      450.82442144877496,
+      453.24010377519534,
+      471.39030058120625,
+      488.6265495180956,
+      451.7940610505216,
+      444.86751235892496,
+      444.0266022430705,
+      450.92783401177934,
+      466.59547645934913,
+      457.1468204944847,
+      458.0503875571858,
+      442.2924756387345,
+      456.4223346825173,
+      442.1156258383306,
+      457.30542125465456,
+      446.72269419168913,
+      471.54759340341235,
+      454.3802665277952
+    ],
+    "actual": [
+      454.08,
+      457.741,
+      471.69,
+      473.909,
+      476.387,
+      458.905,
+      475.056,
+      450.444,
+      453.541,
+      457.871,
+      469.353,
+      501.537,
+      451.656,
+      450.293,
+      438.275,
+      455.831,
+      469.882,
+      452.717,
+      466.687,
+      447.255,
+      456.231,
+      431.371,
+      460.512,
+      442.459,
+      482.04,
+      461.831
+    ],
+    "baseline_predictions": [
+      423.252,
+      453.016,
+      450.919,
+      449.754,
+      422.181,
+      443.367,
+      458.302,
+      449.771,
+      434.462,
+      429.851,
+      461.365,
+      451.944,
+      447.796,
+      454.663,
+      439.878,
+      456.733,
+      433.072,
+      432.309,
+      421.999,
+      438.526,
+      464.738,
+      436.835,
+      404.058,
+      436.407,
+      424.897,
+      427.491
+    ],
+    "evaluation_type": "chronological holdout; observed future spend, not an unconditional forecast"
+  },
+  "plan": {
+    "weekly_budget": 17189.7275,
+    "allocated": 17189.72751129267,
+    "horizon_weeks": 4,
+    "movement_limit": 0.3,
+    "baseline_expected": 1787.647926119702,
+    "optimized_expected": 1816.2214266172055,
+    "modelled_change_percent": 1.5983852345873073,
+    "channels": [
+      {
+        "channel": "paid_search",
+        "baseline_gbp": 4462.1075,
+        "allocated_gbp": 5606.89906365572,
+        "change_percent": 25.655849027745738
+      },
+      {
+        "channel": "paid_social",
+        "baseline_gbp": 3848.16625,
+        "allocated_gbp": 4346.7015997959425,
+        "change_percent": 12.955140641232488
+      },
+      {
+        "channel": "display",
+        "baseline_gbp": 2672.0737500000005,
+        "allocated_gbp": 1870.4516250000004,
+        "change_percent": -29.999999999999993
+      },
+      {
+        "channel": "video",
+        "baseline_gbp": 3271.85375,
+        "allocated_gbp": 2647.6290978410075,
+        "change_percent": -19.078623308239028
+      },
+      {
+        "channel": "email",
+        "baseline_gbp": 1105.2962499999999,
+        "allocated_gbp": 1436.8851249999998,
+        "change_percent": 30.000000000000004
+      },
+      {
+        "channel": "affiliate",
+        "baseline_gbp": 1830.2300000000002,
+        "allocated_gbp": 1281.161,
+        "change_percent": -30.000000000000004
+      }
+    ],
+    "interpretation": "Synthetic scenario estimates, not measured or causal business impact."
+  },
+  "sql_channel_summary": [
+    {
+      "channel": "paid_search",
+      "weeks": 130,
+      "total_spend_gbp": 609318.0,
+      "mean_weekly_spend_gbp": 4687.06
+    },
+    {
+      "channel": "paid_social",
+      "weeks": 130,
+      "total_spend_gbp": 487270.9,
+      "mean_weekly_spend_gbp": 3748.24
+    },
+    {
+      "channel": "video",
+      "weeks": 130,
+      "total_spend_gbp": 430188.72,
+      "mean_weekly_spend_gbp": 3309.14
+    },
+    {
+      "channel": "display",
+      "weeks": 130,
+      "total_spend_gbp": 313535.65,
+      "mean_weekly_spend_gbp": 2411.81
+    },
+    {
+      "channel": "affiliate",
+      "weeks": 130,
+      "total_spend_gbp": 235553.39,
+      "mean_weekly_spend_gbp": 1811.95
+    },
+    {
+      "channel": "email",
+      "weeks": 130,
+      "total_spend_gbp": 131709.16,
+      "mean_weekly_spend_gbp": 1013.15
+    }
+  ],
+  "media_coefficients": {
+    "paid_search": 54.40253048948558,
+    "paid_social": 44.62303226260624,
+    "display": 10.358082519773852,
+    "video": 29.61704212415569,
+    "email": 25.724409721297548,
+    "affiliate": 17.157307375518673
+  }
+}
